@@ -2,7 +2,7 @@ This is a new [**React Native**](https://reactnative.dev) project, bootstrapped 
 
 # Getting Started
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+> **Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
 
 ## Step 1: Start the Metro Server
 
@@ -40,6 +40,24 @@ npm run ios
 
 # OR using Yarn
 yarn ios
+```
+
+### Peprare the dedicated build for testing
+
+```bash
+# for android
+yarn detox build --c android.debug
+# for iOS
+yarn detox build --c ios.debug
+```
+
+### run the test
+
+```bash
+# for android
+yarn test-android
+# for iOS
+yarn test-ios
 ```
 
 If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
